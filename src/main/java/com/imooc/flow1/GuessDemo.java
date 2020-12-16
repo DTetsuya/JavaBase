@@ -10,7 +10,8 @@ import java.util.Scanner;
 public class GuessDemo {
     public static void main(String[] args) {
         //设置答案
-        int number=6;
+        int number=(int)(Math.random()*10+1);//使用随机数生成1到10之间的整数
+        // int number=6;
         int guess;
         System.out.println("猜一个介于1到10直接的数字:");
         do{
