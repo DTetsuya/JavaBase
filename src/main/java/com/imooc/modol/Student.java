@@ -4,12 +4,13 @@ package com.imooc.modol;
  * Created by daiqian on 2020-12-1812:55.
  */
 public class Student {
-    //成员属性：学号、姓名、性别、年龄
+    //成员属性：学号、姓名、性别、年龄、报名选修的学生信息、报名选修的学生个数
     private String stuNo;
     private String stuName;
     private String stuSex;
     private int stuAge;
     private Subject stuSubject;
+
 
     //无参构造
     public  Student(){
@@ -39,6 +40,7 @@ public class Student {
         this.setStuAge(stuAge);
         this.setStuSubject(stuSubject);
     }
+
     public void setStuNo(String stuNo){
         this.stuNo=stuNo;
     }
@@ -101,6 +103,8 @@ public class Student {
 
     }
 
+
+
     /**
      * 学生自我介绍的方法
      * @return 自我介绍的信息，包括姓名、学号、性别和年龄
@@ -144,4 +148,7 @@ public class Student {
                 +this.getStuSubject().getSubjectLife()+"\n专业编号："+this.getStuSubject().getSubjectNo();
         return str;
     }
-}
+
+
+    }
+
